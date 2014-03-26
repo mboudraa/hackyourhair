@@ -1,38 +1,49 @@
 package fr.bemyapp.hackyourhair;
 
-import android.app.Activity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import fr.bemyapp.hackyourhair.adapter.DashboardPagerAdapter;
+import fr.bemyapp.hackyourhair.fragment.AbstractDashboardFragment;
+import fr.bemyapp.hackyourhair.fragment.MainDashboardFragment_;
+import fr.bemyapp.hackyourhair.fragment.TileDashboardFragment_;
+import fr.bemyapp.hackyourhair.model.DashboardTile;
+import fr.castorflex.android.verticalviewpager.VerticalViewPager;
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ViewById;
 
+@EActivity(R.layout.activity_main)
+public class MainActivity extends BaseActivity {
 
-public class MainActivity extends Activity {
+    @ViewById(R.id.vertical_viewpager)
+    VerticalViewPager mViewPager;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    DashboardPagerAdapter mPagerAdapter;
+
+    @AfterViews
+    void onPostCreate() {
+        mPagerAdapter = new DashboardPagerAdapter(getSupportFragmentManager());
+        mViewPager.setAdapter(mPagerAdapter);
+
+        mPagerAdapter.addPage(MainDashboardFragment_.builder().build());
+
+        addTileToDashboard(new DashboardTile(R.string.tile_fake_title, R.drawable.home_3));
+        addTileToDashboard(new DashboardTile(R.string.tile_fake_title, R.drawable.home_3));
+        addTileToDashboard(new DashboardTile(R.string.tile_fake_title, R.drawable.home_3));
+        addTileToDashboard(new DashboardTile(R.string.tile_fake_title, R.drawable.home_3));
+        addTileToDashboard(new DashboardTile(R.string.tile_fake_title, R.drawable.home_3));
+        addTileToDashboard(new DashboardTile(R.string.tile_fake_title, R.drawable.home_3));
+        addTileToDashboard(new DashboardTile(R.string.tile_fake_title, R.drawable.home_3));
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
+    public void addTileToDashboard(DashboardTile tile) {
+        final int item = mPagerAdapter.getCount() - 1;
+        AbstractDashboardFragment dashboardFragment = mPagerAdapter.getItem(item);
+        if (dashboardFragment.isPageFull()) {
+            mPagerAdapter.addPage(TileDashboardFragment_.builder().build());
+            addTileToDashboard(tile);
+        } else {
+            dashboardFragment.addTile(tile);
+//            mViewPager.setCurrentItem(item, true);
         }
-        return super.onOptionsItemSelected(item);
     }
 
 }

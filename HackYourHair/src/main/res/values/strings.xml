@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Hack Your Hair</string>
 
-    <string name="app_name">HackYourHair</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+
+    <string name="about_cody"><![CDATA[
+        L\'Oréal DPP HACK DAY<br />
+        March 27th 2014<br />
+        Get inspired to hack your hair!<br /><br />
+
+        Developers:<br />
+        - <a href="http://www.twitter.com/magikmoun">Mounir BOUDRAA</a><br />
+        - <a href="http://www.twitter.com/Nilhcem">Gautier MECHLING</a><br /><br />
+
+        Many thanks:<br />
+        - <a href="http://www.lorealprofessionnel.com/">L\'Oréal professionnel</a><br />
+        - <a href="http://www.kerastase.com/">Kérastase</a><br />
+        - <a href="http://www.redken.com/">Redken</a><br />
+        - <a href="http://www.42.fr/">École 42</a><br />
+        - <a href="http://www.bemyapp.com/">Be My App</a><br />
+    ]]></string>
+    <string name="tile_fake_title">FAKE TITLE</string>
 
 </resources>
