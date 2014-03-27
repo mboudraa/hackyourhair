@@ -26,7 +26,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="60"
                 android:layout_marginBottom="6dp"
-                app:blurredText="TIP OF THE DAY"
+                app:blurredText="REDKEN #3"
                 app:imageBackground="@drawable/home_2"
                 app:onClickedId="daily-tip"
                 tools:background="@drawable/home_2"/>
