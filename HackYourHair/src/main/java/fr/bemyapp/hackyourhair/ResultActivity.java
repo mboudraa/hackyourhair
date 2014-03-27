@@ -87,13 +87,13 @@ public class ResultActivity extends BaseActivity {
 
         switch (type) {
             case MENU_PRODUCTS:
-                mCompAdvices.setVisibility(View.VISIBLE);
+                mCompProducts.setVisibility(View.VISIBLE);
                 break;
             case MENU_HAIRCUTS:
                 mCompHaircuts.setVisibility(View.VISIBLE);
                 break;
             case MENU_ADVICES:
-                mCompProducts.setVisibility(View.VISIBLE);
+                mCompAdvices.setVisibility(View.VISIBLE);
                 break;
         }
     }

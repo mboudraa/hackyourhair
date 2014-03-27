@@ -3,7 +3,10 @@
     <color name="black">@android:color/black</color>
 
     <!-- Results -->
+    <color name="result_bg">#ffff</color>
     <color name="result_title_active">#f000</color>
-    <color name="result_title_inactive">#666</color>
+    <color name="result_title_inactive">#444</color>
+    <color name="result_product_text">#444</color>
+    <color name="result_product_bg">#ffe5e5e5</color>
 
 </resources>
