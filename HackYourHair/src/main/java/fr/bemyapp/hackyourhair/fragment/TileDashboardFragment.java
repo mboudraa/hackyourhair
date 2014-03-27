@@ -1,7 +1,6 @@
 package fr.bemyapp.hackyourhair.fragment;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
 import fr.bemyapp.hackyourhair.R;
@@ -61,7 +60,6 @@ public class TileDashboardFragment extends AbstractDashboardFragment {
             return;
         }
 
-        Log.i(this.toString(), "ADD TILE -> " + tile);
         int index = mTilesSparseArray.size();
         mTilesSparseArray.put(index, tile);
         updateTile(index, tile);
@@ -69,14 +67,6 @@ public class TileDashboardFragment extends AbstractDashboardFragment {
 
 
     void initDashboard() {
-        Log.i(this.toString(), "INIT DASHBOARD");
-        if (isVisible()) {
-            mTile1.update(0, 0);
-            mTile2.update(0, 0);
-            mTile3.update(0, 0);
-            mTile4.update(0, 0);
-            mTile5.update(0, 0);
-        }
         for (int i = 0; i < mTilesSparseArray.size(); i++) {
             DashboardTile tile = mTilesSparseArray.get(mTilesSparseArray.keyAt(i));
             updateTile(i, tile);
@@ -84,9 +74,7 @@ public class TileDashboardFragment extends AbstractDashboardFragment {
     }
 
     void updateTile(final int index, final DashboardTile tile) {
-        Log.i(this.toString(), "FRAGMENT VISIBLE -> " + isVisible());
         if (isVisible()) {
-            Log.i(this.toString(), "UPDATING TILE " + index + " -> " + tile);
             SemiBlurredImageTextView tileView = getTile(index);
             registerForContextMenu(tileView);
             tileView.update(tile.getTitle(), tile.getBackground());
@@ -99,28 +87,6 @@ public class TileDashboardFragment extends AbstractDashboardFragment {
 
     }
 
-
-    private int getIndex(View v) {
-        switch (v.getId()) {
-            case R.id.tile1:
-                return 0;
-
-            case R.id.tile2:
-                return 1;
-
-            case R.id.tile3:
-                return 2;
-
-            case R.id.tile4:
-                return 3;
-
-            case R.id.tile5:
-                return 4;
-
-            default:
-                return -1;
-        }
-    }
 
     private SemiBlurredImageTextView getTile(int index) {
 
