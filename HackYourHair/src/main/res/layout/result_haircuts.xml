@@ -9,36 +9,36 @@
               android:layout_height="match_parent">
 
     <ImageView
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:src="@drawable/coiffure1" />
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:src="@drawable/haicuts1" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="40dp"/>
 
     <ImageView
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:src="@drawable/coiffure2" />
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:src="@drawable/haicuts2" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="40dp"/>
 
     <ImageView
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:src="@drawable/coiffure3" />
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:src="@drawable/haicuts3" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="40dp"/>
 
     <ImageView
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:src="@drawable/coiffure4" />
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:src="@drawable/haicuts4" />
 
     <View
         android:layout_width="match_parent"
