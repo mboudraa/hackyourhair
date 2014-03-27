@@ -42,11 +42,36 @@
             android:text="ADVICES"/>
     </LinearLayout>
 
-    <!-- Fragments -->
-    <View
-        android:id="@+id/result_subcontainer"
-        android:background="#ff0f"
+    <!-- Components -->
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/result_subcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <!-- Products -->
+            <include
+                android:id="@+id/result_component_products"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/result_products" />
+
+            <!-- Products -->
+            <include
+                android:id="@+id/result_component_haircuts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/result_haircuts" />
+
+            <!-- Products -->
+            <include
+                android:id="@+id/result_component_advices"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/result_advices" />
+
+        </FrameLayout>
+    </ScrollView>
 </LinearLayout>

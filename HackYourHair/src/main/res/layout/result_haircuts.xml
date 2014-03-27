@@ -3,11 +3,44 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:background="#ff9"
+              android:padding="30dp"
+              android:gravity="center"
               android:layout_height="match_parent">
 
-    <TextView
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/coiffure1" />
+
+    <View
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="HAIRCUTS"/>
+        android:layout_height="40dp"/>
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/coiffure2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/coiffure3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/coiffure4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
 </LinearLayout>
