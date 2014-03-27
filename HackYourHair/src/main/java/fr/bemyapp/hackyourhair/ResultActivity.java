@@ -3,17 +3,19 @@ package fr.bemyapp.hackyourhair;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-import org.androidannotations.annotations.AfterViews;
-import org.androidannotations.annotations.Click;
-import org.androidannotations.annotations.EActivity;
-import org.androidannotations.annotations.ViewById;
+import org.androidannotations.annotations.*;
 
 @EActivity(R.layout.result)
 public class ResultActivity extends BaseActivity {
 
+    public static final String EXTRA_TIP = "tipOfTheDay";
+
     private static final int MENU_PRODUCTS = 0;
     private static final int MENU_HAIRCUTS = 1;
     private static final int MENU_ADVICES = 2;
+
+    @Extra(EXTRA_TIP)
+    boolean mTipOfTheDay;
 
     @ViewById(R.id.result_component_products)
     View mCompProducts;
@@ -38,7 +40,13 @@ public class ResultActivity extends BaseActivity {
 
     @AfterViews
     void afterViews() {
-        onProductsClicked();
+        if (mTipOfTheDay) {
+            onAdvicesClicked();
+            mMenuProducts.setVisibility(View.GONE);
+            mMenuHaircuts.setVisibility(View.GONE);
+        } else {
+            onProductsClicked();
+        }
     }
 
     @Click(R.id.result_advices)

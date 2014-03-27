@@ -29,7 +29,6 @@
             android:shadowDy="0"
             android:shadowRadius="3"
             android:textColorLink="#fff"
-            android:fontFamily="sans-serif-condensed"
             android:textSize="18sp"
             android:lineSpacingMultiplier="1.1"/>
     </ScrollView>

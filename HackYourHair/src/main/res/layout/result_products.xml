@@ -11,8 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="280dp"
         android:layout_marginBottom="40dp"
-        android:background="@color/result_product_bg"
-        android:src="@drawable/coiffure1">
+        android:background="@color/result_product_bg">
 
         <ImageView
             android:layout_width="match_parent"
@@ -40,8 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="280dp"
         android:layout_marginBottom="40dp"
-        android:background="@color/result_product_bg"
-        android:src="@drawable/coiffure1">
+        android:background="@color/result_product_bg">
 
         <ImageView
             android:layout_width="match_parent"
@@ -69,8 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="280dp"
         android:layout_marginBottom="40dp"
-        android:background="@color/result_product_bg"
-        android:src="@drawable/coiffure1">
+        android:background="@color/result_product_bg">
 
         <ImageView
             android:layout_width="match_parent"

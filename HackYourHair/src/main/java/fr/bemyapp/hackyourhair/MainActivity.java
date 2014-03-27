@@ -39,16 +39,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.home_daily_tip:
                 intent = new Intent(this, ResultActivity_.class);
+                intent.putExtra(ResultActivity.EXTRA_TIP, true);
                 break;
-
             case R.id.home_about:
                 intent = new Intent(this, AboutActivity_.class);
                 break;
-
             case R.id.home_analyze_my_hair:
                 intent = new Intent(this, QuizzActivity_.class);
                 break;
-
             case R.id.home_find_a_salon:
                 intent = new Intent(this, MapActivity_.class);
                 break;
