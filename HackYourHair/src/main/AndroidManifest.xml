@@ -43,6 +43,9 @@
             android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
             android:name=".MapActivity_"/>
 
+        <activity
+            android:name=".QuizzActivity_"/>
+
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="@string/config_com.google.android.maps.v2.api_key"/>

@@ -1,4 +1,4 @@
-package fr.bemyapp.hackyourhair.events;
+package fr.bemyapp.hackyourhair.event;
 
 public class BlurredImageSelectedEvent {
 

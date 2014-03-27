@@ -1,20 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ff000000">
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#ff000000"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
-
-    <fragment
-        android:id="@+id/fragment_homescreen"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        class="fr.bemyapp.hackyourhair.fragment.MainDashboardFragment_"
-        />
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:orientation="horizontal">
 
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:layout_margin="6dp">
+
+            <fr.bemyapp.hackyourhair.views.SemiBlurredImageTextView
+                android:id="@+id/home_daily_tip"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:layout_marginBottom="6dp"
+                app:blurredText="TIP OF THE DAY"
+                app:imageBackground="@drawable/home_2"
+                app:onClickedId="daily-tip"
+                tools:background="@drawable/home_2"/>
+
+            <fr.bemyapp.hackyourhair.views.SemiBlurredImageTextView
+                android:id="@+id/home_find_a_salon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                app:blurredText="FIND A SALON"
+                app:imageBackground="@drawable/home_3"
+                app:onClickedId="find-salon"
+                app:blurredRadius="3"
+                tools:background="@drawable/home_3"/>
+
+        </LinearLayout>
+
+        <fr.bemyapp.hackyourhair.views.SemiBlurredImageTextView
+            android:id="@+id/home_analyze_my_hair"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            app:blurredText="ANALYZE MY HAIR"
+            app:imageBackground="@drawable/home_1"
+            app:onClickedId="analyze"
+            tools:background="@drawable/home_1"/>
+    </LinearLayout>
+
+    <fr.bemyapp.hackyourhair.views.SemiBlurredImageTextView
+        android:id="@+id/home_about"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        app:blurredText="ABOUT"
+        app:imageBackground="@drawable/home_4"
+        app:onClickedId="about"
+        app:blurredRadius="1"
+        tools:background="@drawable/home_4"/>
 
 </LinearLayout>
-

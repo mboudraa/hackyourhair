@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/black"
+    >
+
+    <TextView
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT YOUR HAIR DENSITY"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:fontFamily="fonts/leaguegothic_condensed_regular.ttf"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:padding="3dp"
+            >
+
+            <fr.bemyapp.hackyourhair.views.SemiBlurredImageTextView
+                android:id="@+id/quizz_density_dense"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                app:blurredText="DENSE"
+                app:imageBackground="@drawable/male"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:padding="3dp"
+            >
+
+            <fr.bemyapp.hackyourhair.views.SemiBlurredImageTextView
+                android:id="@+id/quizz_density_normal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                app:blurredText="NORMAL"
+                app:imageBackground="@drawable/female"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:padding="3dp"
+            >
+
+            <fr.bemyapp.hackyourhair.views.SemiBlurredImageTextView
+                android:id="@+id/quizz_density_sparse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                app:blurredText="SPARSE"
+                app:imageBackground="@drawable/female"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
