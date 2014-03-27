@@ -41,7 +41,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginBottom="6dp"
                 app:blurredText="MILD\nTO\nMODERATE"
-                app:imageBackground="@drawable/male"
+                app:imageBackground="@drawable/hairloss_peu"
 
                 />
 
@@ -60,7 +60,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginBottom="6dp"
                 app:blurredText="MODERATE\nTO\nHEAVY"
-                app:imageBackground="@drawable/female"
+                app:imageBackground="@drawable/hairloss_bcp"
 
                 />
 
