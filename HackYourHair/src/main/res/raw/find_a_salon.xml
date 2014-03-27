@@ -1,0 +1,321 @@
+<response code="1"><collection name="poi" count="10" country="FR" radius="10" radiusuom="km" centerpoint="2.3184740130612838,48.896182084183486" state="" city="17e Arrondissement" address="96 Boulevard Bessières" province="Île-de-France" postalcode="75017"><poi>
+  <name>VIP STREET COIFFURE</name>
+  <_distance>0.76</_distance>
+  <_distanceuom>km</_distanceuom>
+  <address1>145 AVENUE DE SAINT OUEN</address1>
+  <address2/>
+  <certified/>
+  <chemistry>False</chemistry>
+  <chignonexpress/>
+  <chromatics>False</chromatics>
+  <city>PARIS 17</city>
+  <clientkey>76137</clientkey>
+  <country>FR</country>
+  <fax/>
+  <haircare>True</haircare>
+  <icon>default</icon>
+  <latitude>48.8969266666667</latitude>
+  <longitude>2.32875666666667</longitude>
+  <mens>True</mens>
+  <offre_essie_pro/>
+  <phone>0146270644</phone>
+  <postalcode>75017</postalcode>
+  <province/>
+  <rank/>
+  <seq>False</seq>
+  <shapecontrol>False</shapecontrol>
+  <state/>
+  <store_latitude>2433224,20408731</store_latitude>
+  <store_longitude>599436,583042289</store_longitude>
+  <styling>True</styling>
+  <uid>1392567679</uid>
+</poi>
+<poi>
+  <name>JEAN LOUIS DAVID TRADITION</name>
+  <_distance>0.80</_distance>
+  <_distanceuom>km</_distanceuom>
+  <address1>72 AVENUE DE SAINT OUEN</address1>
+  <address2/>
+  <certified/>
+  <chemistry>True</chemistry>
+  <chignonexpress/>
+  <chromatics>False</chromatics>
+  <city>PARIS 18</city>
+  <clientkey>32935</clientkey>
+  <country>FR</country>
+  <fax/>
+  <haircare>True</haircare>
+  <icon>default</icon>
+  <latitude>48.89174</latitude>
+  <longitude>2.32703</longitude>
+  <mens>True</mens>
+  <offre_essie_pro/>
+  <phone>0146274127</phone>
+  <postalcode>75018</postalcode>
+  <province/>
+  <rank/>
+  <seq>True</seq>
+  <shapecontrol>False</shapecontrol>
+  <state/>
+  <store_latitude>2432617,03287314</store_latitude>
+  <store_longitude>599313,982503475</store_longitude>
+  <styling>True</styling>
+  <uid>1392567029</uid>
+</poi>
+<poi>
+  <name>CAMILLE ALBANE</name>
+  <_distance>0.86</_distance>
+  <_distanceuom>km</_distanceuom>
+  <address1>ANGLE 22 RUE DES MOINES</address1>
+  <address2>RUE  NOLLET</address2>
+  <certified/>
+  <chemistry>False</chemistry>
+  <chignonexpress/>
+  <chromatics>True</chromatics>
+  <city>PARIS 17</city>
+  <clientkey>64453</clientkey>
+  <country>FR</country>
+  <fax/>
+  <haircare>True</haircare>
+  <icon>default</icon>
+  <latitude>48.888482</latitude>
+  <longitude>2.319086</longitude>
+  <mens>False</mens>
+  <offre_essie_pro/>
+  <phone>0153311025</phone>
+  <postalcode>75017</postalcode>
+  <province/>
+  <rank/>
+  <seq>True</seq>
+  <shapecontrol>False</shapecontrol>
+  <state/>
+  <store_latitude>2432230,33696348</store_latitude>
+  <store_longitude>598721,683515259</store_longitude>
+  <styling>False</styling>
+  <uid>1392567512</uid>
+</poi>
+<poi>
+  <name>DAVID BRALIZZ</name>
+  <_distance>0.98</_distance>
+  <_distanceuom>km</_distanceuom>
+  <address1>13 VILLA ST MICHEL</address1>
+  <address2/>
+  <certified/>
+  <chemistry>True</chemistry>
+  <chignonexpress/>
+  <chromatics>False</chromatics>
+  <city>PARIS 18</city>
+  <clientkey>124514</clientkey>
+  <country>FR</country>
+  <fax/>
+  <haircare>True</haircare>
+  <icon>default</icon>
+  <latitude>48.8899013</latitude>
+  <longitude>2.327781</longitude>
+  <mens>False</mens>
+  <offre_essie_pro/>
+  <phone>0142280088</phone>
+  <postalcode>75018</postalcode>
+  <province/>
+  <rank/>
+  <seq>True</seq>
+  <shapecontrol>False</shapecontrol>
+  <state/>
+  <store_latitude>2432412,514</store_latitude>
+  <store_longitude>599340,9728</store_longitude>
+  <styling>False</styling>
+  <uid>-1957448197</uid>
+</poi>
+<poi>
+  <name>ERIC STIPA</name>
+  <_distance>1.04</_distance>
+  <_distanceuom>km</_distanceuom>
+  <address1>55 BOULEVARD JEAN JAURES</address1>
+  <address2/>
+  <certified/>
+  <chemistry>False</chemistry>
+  <chignonexpress/>
+  <chromatics>False</chromatics>
+  <city>CLICHY</city>
+  <clientkey>27396</clientkey>
+  <country>FR</country>
+  <fax/>
+  <haircare>False</haircare>
+  <icon>default</icon>
+  <latitude>48.900532</latitude>
+  <longitude>2.305834</longitude>
+  <mens>False</mens>
+  <offre_essie_pro/>
+  <phone>0147370015</phone>
+  <postalcode>92110</postalcode>
+  <province/>
+  <rank/>
+  <seq>False</seq>
+  <shapecontrol>False</shapecontrol>
+  <state/>
+  <store_latitude>2434057,8651065</store_latitude>
+  <store_longitude>597484,53067591</store_longitude>
+  <styling>False</styling>
+  <uid>-1841459078</uid>
+</poi>
+<poi>
+  <name>JEAN LOUIS DAVID</name>
+  <_distance>1.13</_distance>
+  <_distanceuom>km</_distanceuom>
+  <address1>49 AVENUE DE CLICHY</address1>
+  <address2/>
+  <certified/>
+  <chemistry>True</chemistry>
+  <chignonexpress/>
+  <chromatics>False</chromatics>
+  <city>PARIS 17</city>
+  <clientkey>33756</clientkey>
+  <country>FR</country>
+  <fax/>
+  <haircare>True</haircare>
+  <icon>default</icon>
+  <latitude>48.88718</latitude>
+  <longitude>2.32576</longitude>
+  <mens>True</mens>
+  <offre_essie_pro/>
+  <phone>0144709017</phone>
+  <postalcode>75017</postalcode>
+  <province/>
+  <rank/>
+  <seq>True</seq>
+  <shapecontrol>False</shapecontrol>
+  <state/>
+  <store_latitude>2432080,5019349</store_latitude>
+  <store_longitude>599210,340290213</store_longitude>
+  <styling>True</styling>
+  <uid>1392567038</uid>
+</poi>
+<poi>
+  <name>YVES KATZ</name>
+  <_distance>1.38</_distance>
+  <_distanceuom>km</_distanceuom>
+  <address1>45 RUE DES DAMES</address1>
+  <address2/>
+  <certified/>
+  <chemistry>False</chemistry>
+  <chignonexpress/>
+  <chromatics>True</chromatics>
+  <city>PARIS 17</city>
+  <clientkey>77019</clientkey>
+  <country>FR</country>
+  <fax/>
+  <haircare>True</haircare>
+  <icon>default</icon>
+  <latitude>48.884075</latitude>
+  <longitude>2.322725</longitude>
+  <mens>False</mens>
+  <offre_essie_pro/>
+  <phone>0145220685</phone>
+  <postalcode>75017</postalcode>
+  <province/>
+  <rank/>
+  <seq>True</seq>
+  <shapecontrol>False</shapecontrol>
+  <state/>
+  <store_latitude>2431742,42033893</store_latitude>
+  <store_longitude>598987,420888763</store_longitude>
+  <styling>True</styling>
+  <uid>1917172731</uid>
+</poi>
+<poi>
+  <name>JEAN LOUIS DAVID DIFFUSION</name>
+  <_distance>1.38</_distance>
+  <_distanceuom>km</_distanceuom>
+  <address1>28 RUE LEGENDRE</address1>
+  <address2/>
+  <certified/>
+  <chemistry>False</chemistry>
+  <chignonexpress/>
+  <chromatics>False</chromatics>
+  <city>PARIS 17</city>
+  <clientkey>32426</clientkey>
+  <country>FR</country>
+  <fax/>
+  <haircare>False</haircare>
+  <icon>default</icon>
+  <latitude>48.88407</latitude>
+  <longitude>2.31407</longitude>
+  <mens>False</mens>
+  <offre_essie_pro/>
+  <phone>0144400997</phone>
+  <postalcode>75017</postalcode>
+  <province/>
+  <rank/>
+  <seq>False</seq>
+  <shapecontrol>False</shapecontrol>
+  <state/>
+  <store_latitude>2431740,83748332</store_latitude>
+  <store_longitude>598355,527096162</store_longitude>
+  <styling>False</styling>
+  <uid>-1841458981</uid>
+</poi>
+<poi>
+  <name>COIFFURE SAMIR</name>
+  <_distance>1.42</_distance>
+  <_distanceuom>km</_distanceuom>
+  <address1>PALAIS DES CONGRES</address1>
+  <address2/>
+  <certified/>
+  <chemistry>False</chemistry>
+  <chignonexpress/>
+  <chromatics>False</chromatics>
+  <city>PARIS 17</city>
+  <clientkey>53183</clientkey>
+  <country>FR</country>
+  <fax/>
+  <haircare>True</haircare>
+  <icon>default</icon>
+  <latitude>48.88714</latitude>
+  <longitude>2.30468</longitude>
+  <mens>True</mens>
+  <offre_essie_pro/>
+  <phone>0140682152</phone>
+  <postalcode>75017</postalcode>
+  <province/>
+  <rank/>
+  <seq>False</seq>
+  <shapecontrol>False</shapecontrol>
+  <state/>
+  <store_latitude>2432145,97</store_latitude>
+  <store_longitude>597819,37</store_longitude>
+  <styling>True</styling>
+  <uid>1392567326</uid>
+</poi>
+<poi>
+  <name>TONI AND GUY</name>
+  <_distance>1.69</_distance>
+  <_distanceuom>km</_distanceuom>
+  <address1>8 BD DE COURCELLES</address1>
+  <address2/>
+  <certified/>
+  <chemistry>False</chemistry>
+  <chignonexpress/>
+  <chromatics>False</chromatics>
+  <city>PARIS 17</city>
+  <clientkey>112004</clientkey>
+  <country>FR</country>
+  <fax/>
+  <haircare>True</haircare>
+  <icon>default</icon>
+  <latitude>48.8811662284433</latitude>
+  <longitude>2.3145694274904</longitude>
+  <mens>True</mens>
+  <offre_essie_pro/>
+  <phone>0140530684</phone>
+  <postalcode>75017</postalcode>
+  <province/>
+  <rank/>
+  <seq>False</seq>
+  <shapecontrol>False</shapecontrol>
+  <state/>
+  <store_latitude>2431421,41384696</store_latitude>
+  <store_longitude>598384,590144367</store_longitude>
+  <styling>True</styling>
+  <uid>1392568241</uid>
+</poi>
+</collection></response>

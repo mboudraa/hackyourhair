@@ -63,7 +63,6 @@ dependencies {
     apt "org.androidannotations:androidannotations:3.0.1"
     compile "org.androidannotations:androidannotations-api:3.0.1"
     compile 'com.android.support:support-v4:+'
-    compile 'com.android.support:appcompat-v7:+'
     compile 'de.greenrobot:eventbus:2.2.0'
     compile 'com.squareup.picasso:picasso:2.2.0'
     compile 'com.squareup.retrofit:retrofit:1.5.0'
@@ -77,4 +76,8 @@ dependencies {
         exclude module: 'xpp3'
     }
     compile 'uk.co.chrisjenx.calligraphy:calligraphy:0.6.+'
+    compile 'com.google.android.gms:play-services:4.2.42'
+
+
+
 }
