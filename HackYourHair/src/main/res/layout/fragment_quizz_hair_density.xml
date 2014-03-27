@@ -39,7 +39,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginBottom="6dp"
                 app:blurredText="DENSE"
-                app:imageBackground="@drawable/male"
+                app:imageBackground="@drawable/thick"
 
                 />
 
@@ -58,7 +58,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginBottom="6dp"
                 app:blurredText="NORMAL"
-                app:imageBackground="@drawable/female"
+                app:imageBackground="@drawable/average"
 
                 />
 
@@ -78,7 +78,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginBottom="6dp"
                 app:blurredText="SPARSE"
-                app:imageBackground="@drawable/female"
+                app:imageBackground="@drawable/sparse"
 
                 />
 
