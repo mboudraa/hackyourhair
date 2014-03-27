@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text="SELECT YOUR STAGE OF HAIRNESS"
         android:textColor="@android:color/white"
-        android:textSize="22sp"
+        android:textSize="20sp"
         android:fontFamily="fonts/swansea.ttf"
         />
 
