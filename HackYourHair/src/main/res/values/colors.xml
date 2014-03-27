@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">@android:color/black</color>
+
+    <!-- Results -->
+    <color name="result_title_active">#f000</color>
+    <color name="result_title_inactive">#666</color>
+
 </resources>

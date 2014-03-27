@@ -40,6 +40,9 @@
             android:name=".AboutActivity_"/>
 
         <activity
+            android:name=".ResultActivity_"/>
+
+        <activity
             android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
             android:name=".MapActivity_"/>
 
