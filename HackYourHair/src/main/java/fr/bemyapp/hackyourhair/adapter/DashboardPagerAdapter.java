@@ -2,41 +2,42 @@ package fr.bemyapp.hackyourhair.adapter;
 
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.util.Log;
 import fr.bemyapp.hackyourhair.fragment.AbstractDashboardFragment;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 
-public class DashboardPagerAdapter extends FragmentStatePagerAdapter{
+public class DashboardPagerAdapter extends FragmentStatePagerAdapter {
 
-    ArrayList<AbstractDashboardFragment> mFragmentArrayList = new ArrayList<AbstractDashboardFragment>();
+    LinkedList<AbstractDashboardFragment> mFragmentList = new LinkedList<AbstractDashboardFragment>();
+
     public DashboardPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 
-    public void addPage(AbstractDashboardFragment f){
-        if(f != null){
-            mFragmentArrayList.add(f);
+    public void addPage(AbstractDashboardFragment f) {
+
+        if (f != null) {
+            Log.i(this.toString(), "ADDING PAGE -> " + f);
+            mFragmentList.add(f);
         }
         notifyDataSetChanged();
     }
 
     @Override
     public int getCount() {
-        return mFragmentArrayList.size();
+        return mFragmentList.size();
     }
 
-    @Override
-    public int getItemPosition(Object fragment) {
-         int position = mFragmentArrayList.indexOf(fragment);
-        if(position == -1){
-            position = POSITION_NONE;
-        }
-        return position;
+
+    public void clear() {
+        mFragmentList.clear();
+        notifyDataSetChanged();
     }
 
     @Override
     public AbstractDashboardFragment getItem(int position) {
-        return mFragmentArrayList.get(position);
+        return mFragmentList.get(position);
     }
 
 }

@@ -1,11 +1,12 @@
 package fr.bemyapp.hackyourhair.fragment;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.util.SparseArray;
+import android.view.View;
 import fr.bemyapp.hackyourhair.R;
 import fr.bemyapp.hackyourhair.model.DashboardTile;
 import fr.bemyapp.hackyourhair.views.SemiBlurredImageTextView;
-import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
@@ -30,9 +31,6 @@ public class TileDashboardFragment extends AbstractDashboardFragment {
 
     SparseArray<DashboardTile> mTilesSparseArray = new SparseArray<DashboardTile>();
 
-    private Runnable waitingRequest;
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,9 +43,9 @@ public class TileDashboardFragment extends AbstractDashboardFragment {
         }
     }
 
-
-    @AfterViews
-    void onPostCreateView() {
+    @Override
+    public void onResume() {
+        super.onResume();
         initDashboard();
     }
 
@@ -62,6 +60,8 @@ public class TileDashboardFragment extends AbstractDashboardFragment {
         if (isPageFull()) {
             return;
         }
+
+        Log.i(this.toString(), "ADD TILE -> " + tile);
         int index = mTilesSparseArray.size();
         mTilesSparseArray.put(index, tile);
         updateTile(index, tile);
@@ -69,6 +69,14 @@ public class TileDashboardFragment extends AbstractDashboardFragment {
 
 
     void initDashboard() {
+        Log.i(this.toString(), "INIT DASHBOARD");
+        if (isVisible()) {
+            mTile1.update(0, 0);
+            mTile2.update(0, 0);
+            mTile3.update(0, 0);
+            mTile4.update(0, 0);
+            mTile5.update(0, 0);
+        }
         for (int i = 0; i < mTilesSparseArray.size(); i++) {
             DashboardTile tile = mTilesSparseArray.get(mTilesSparseArray.keyAt(i));
             updateTile(i, tile);
@@ -76,16 +84,13 @@ public class TileDashboardFragment extends AbstractDashboardFragment {
     }
 
     void updateTile(final int index, final DashboardTile tile) {
-        waitingRequest = new Runnable() {
-            @Override
-            public void run() {
-                SemiBlurredImageTextView tileView = getTile(index);
-                tileView.update(tile.getTitle(), tile.getBackground());
-            }
-        };
-
+        Log.i(this.toString(), "FRAGMENT VISIBLE -> " + isVisible());
         if (isVisible()) {
-            executeWaitingRequest();
+            Log.i(this.toString(), "UPDATING TILE " + index + " -> " + tile);
+            SemiBlurredImageTextView tileView = getTile(index);
+            registerForContextMenu(tileView);
+            tileView.update(tile.getTitle(), tile.getBackground());
+            tileView.setVisibility(View.VISIBLE);
         }
     }
 
@@ -94,6 +99,28 @@ public class TileDashboardFragment extends AbstractDashboardFragment {
 
     }
 
+
+    private int getIndex(View v) {
+        switch (v.getId()) {
+            case R.id.tile1:
+                return 0;
+
+            case R.id.tile2:
+                return 1;
+
+            case R.id.tile3:
+                return 2;
+
+            case R.id.tile4:
+                return 3;
+
+            case R.id.tile5:
+                return 4;
+
+            default:
+                return -1;
+        }
+    }
 
     private SemiBlurredImageTextView getTile(int index) {
 
@@ -134,18 +161,5 @@ public class TileDashboardFragment extends AbstractDashboardFragment {
         return mTilesSparseArray.size() == 5;
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        if (waitingRequest != null) {
-            executeWaitingRequest();
-        }
-    }
-
-
-    void executeWaitingRequest() {
-        waitingRequest.run();
-        waitingRequest = null;
-    }
 
 }

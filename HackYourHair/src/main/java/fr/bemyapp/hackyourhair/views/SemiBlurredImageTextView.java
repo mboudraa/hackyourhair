@@ -41,7 +41,7 @@ public class SemiBlurredImageTextView extends FrameLayout {
         mText = (TextView) findViewById(R.id.blurred_text);
         mBackground = (ImageView) findViewById(R.id.blurred_image);
         setCustomAttributes(context, attrs);
-//        applyBlur();
+        applyBlur();
     }
 
     private void setCustomAttributes(Context context, AttributeSet attrs) {
@@ -91,8 +91,13 @@ public class SemiBlurredImageTextView extends FrameLayout {
     }
 
     public void update(int title, int background) {
-        Compatibility.setBackground(mBackground, getResources().getDrawable(background));
-        mText.setText(title);
+        mBackground.setBackgroundResource(background);
+        if (title != 0) {
+            mText.setText(title);
+        } else {
+            mText.setText(null);
+        }
+
 //        applyBlur();
 //        invalidate();
 
