@@ -40,7 +40,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginBottom="6dp"
                 app:blurredText="LONG"
-                app:imageBackground="@drawable/male"
+                app:imageBackground="@drawable/chxlong"
 
                 />
 
@@ -59,7 +59,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginBottom="6dp"
                 app:blurredText="MEDIUM"
-                app:imageBackground="@drawable/female"
+                app:imageBackground="@drawable/chxmilong"
 
                 />
 

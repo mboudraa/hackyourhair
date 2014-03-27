@@ -38,6 +38,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         Intent intent = null;
         switch (v.getId()) {
             case R.id.home_daily_tip:
+                intent = new Intent(this, ResultActivity_.class);
                 break;
 
             case R.id.home_about:
