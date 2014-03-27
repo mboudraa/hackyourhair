@@ -15,40 +15,20 @@
         android:layout_height="wrap_content"
         android:text="SELECT YOUR LIFE FACTOR"
         android:textColor="@android:color/white"
-        android:textSize="26sp"
-        android:fontFamily="fonts/leaguegothic_condensed_regular.ttf"
+        android:textSize="22sp"
+        android:fontFamily="fonts/swansea.ttf"
         />
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="3dp"
         >
 
-
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="50"
-            android:padding="3dp"
-            >
-
-            <fr.bemyapp.hackyourhair.views.SemiBlurredImageTextView
-                android:id="@+id/quizz_life_factors_stress"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="6dp"
-                app:blurredText="STRESS"
-                app:imageBackground="@drawable/male"
-
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="50"
             android:padding="3dp"
             >
@@ -59,16 +39,37 @@
                 android:layout_height="match_parent"
                 android:layout_marginBottom="6dp"
                 app:blurredText="PREGNANCY"
-                app:imageBackground="@drawable/female"
+                app:imageBackground="@drawable/pregnant"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:padding="3dp"
+            >
+
+            <fr.bemyapp.hackyourhair.views.SemiBlurredImageTextView
+                android:id="@+id/quizz_life_factors_stress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                app:blurredText="STRESS"
+                app:imageBackground="@drawable/stress"
 
                 />
 
         </LinearLayout>
 
 
+
+
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="50"
             android:padding="3dp"
             >
@@ -79,11 +80,12 @@
                 android:layout_height="match_parent"
                 android:layout_marginBottom="6dp"
                 app:blurredText="HEREDITARY\nHAIRLOSS"
-                app:imageBackground="@drawable/female"
+                app:imageBackground="@drawable/hairloss"
 
                 />
 
         </LinearLayout>
+
 
     </LinearLayout>
 

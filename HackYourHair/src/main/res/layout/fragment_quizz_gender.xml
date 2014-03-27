@@ -16,7 +16,7 @@
         android:text="SELECT YOUR GENDER"
         android:textColor="@android:color/white"
         android:textSize="26sp"
-        android:fontFamily="fonts/leaguegothic_condensed_regular.ttf"
+        android:fontFamily="fonts/swansea.ttf"
         />
 
     <LinearLayout

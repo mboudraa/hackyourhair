@@ -15,8 +15,8 @@
         android:layout_height="wrap_content"
         android:text="SELECT YOUR STAGE OF HAIRNESS"
         android:textColor="@android:color/white"
-        android:textSize="26sp"
-        android:fontFamily="fonts/leaguegothic_condensed_regular.ttf"
+        android:textSize="22sp"
+        android:fontFamily="fonts/swansea.ttf"
         />
 
     <LinearLayout
