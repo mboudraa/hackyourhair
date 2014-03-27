@@ -1,5 +1,6 @@
 package fr.bemyapp.hackyourhair;
 
+import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import de.greenrobot.event.EventBus;
 import fr.bemyapp.hackyourhair.adapter.QuizzPagerAdapter;
@@ -50,9 +51,8 @@ public class QuizzActivity extends BaseActivity {
     }
 
     public void onEventMainThread(QuizzGoToRecommandationEvent event) {
-        
+        startActivity(new Intent(this, ResultActivity_.class));
     }
-
 
     @Override
     protected void onResume() {
